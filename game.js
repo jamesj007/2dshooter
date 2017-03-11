@@ -94,31 +94,21 @@ function createPlayer(){
 //console.log(players.length);
 
 
-window.onkeydown = function (e) {
-    var code = e.keyCode ? e.keyCode : e.which;
-    if (code === 87) { //up key
-        //alert('up');
-        //alert(players[0].radius);
-        players[0].setY(players[0].getY() - 10);
-        //alert("it gets here");
-        //players[0].draw(ctx);
-        //alert("it gets here x2");
-    } else if (code === 83) { //down key
-        players[0].setY(players[0].getY() + 10);
-        //alert('down');
-    } else if (code === 65) { //left key
-        players[0].setX(players[0].getX() - 10);
-        //alert('down');
-    } else if (code === 68) { //right key
-        players[0].setX(players[0].getX() + 10);
-        //alert('down');
-    } 
-    reDraw();
-};
-
 function reDraw(){
     ctx.clearRect(0,0,canvas.width, canvas.height);
     for (var i = 0; i < players.length; i++){
         players[i].draw(ctx);
     }
+}
+
+/*
+var gameStart = true;
+
+while (gameStart){
+
+}
+*/
+
+function movePlayer(e){
+    
 }
