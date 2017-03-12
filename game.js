@@ -215,11 +215,11 @@ function moveRemainder(){
                 players[0].setY(players[0].getY() + yDistance*deCell);
             }
             reDraw();
-            
+            /*
             if (players[0].getX() !== targetX && players[0].getY() !== targetY){
                 moveRemainder();
             }
-            
+            */
                    
         }
     }
